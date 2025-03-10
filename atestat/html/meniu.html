@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            height: 100vh;
+            justify-content: center;
+        }
+        button {
+            width: 200px; /* Lățime fixă */
+            padding: 15px; /* Dimensiune mai mare */
+            font-size: 18px;
+            background-color: yellow; /* Culoare galbenă */
+            border: 2px solid #000; /* Chenar negru */
+            border-radius: 10px; /* Colțuri rotunjite */
+            cursor: pointer;
+            margin: 10px 0; /* Spațiere între butoane */
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: orange; /* Culoare la hover */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="schimbaPagina('html/biografie.html')">Biografie</button>
+    <button onclick="schimbaPagina('html/pagina2.html')">Pagina 2</button>
+    <button onclick="schimbaPagina('html/pagina3.html')">Pagina 3</button>
+    <b

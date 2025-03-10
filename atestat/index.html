@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site cu Meniu</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        #titlu {
+            height: 15%;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #container {
+            display: flex;
+            flex: 1;
+        }
+        #meniu {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        #continut {
+            flex: 1;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="titlu">
+        <iframe src="html/titlu.html"></iframe>
+    </div>
+    <div id="container">
+        <div id="meniu">
+            <iframe src="html/meniu.html" name="meniu"></iframe>
+        </div>
+        <div id="continut">
+            <iframe src="html/continut.html" name="continut"></iframe>
+        </div>
+    </div>
+</body>
+</html>
