@@ -9,28 +9,46 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #f4f4f4;
+            background-image: url('../img/10.jpg'); /* Adaugă calea către imaginea de fundal a paginii */
+            background-size: cover;
+            background-position: center;
             height: 100vh;
             justify-content: center;
         }
+
         button {
-            width: 200px; /* Lățime fixă */
-            padding: 15px; /* Dimensiune mai mare */
+            width: 200px;
+            padding: 15px;
             font-size: 18px;
-            background-color: yellow; /* Culoare galbenă */
-            border: 2px solid #000; /* Chenar negru */
-            border-radius: 10px; /* Colțuri rotunjite */
+            background-image: url('../img/6.jpg'); /* Înlocuiește cu calea imaginii dorite pentru buton */
+            background-size: cover; /* Imaginea va acoperi întregul buton */
+            border: 2px solid black;
+            border-radius: 10px;
             cursor: pointer;
-            margin: 10px 0; /* Spațiere între butoane */
+            margin: 10px 0;
             font-weight: bold;
+            color: black; /* Textul butonului va fi negru */
+            text-align: center; /* Centrare text */
+            background-position: center;
+            transition: background-color 0.3s ease;
+            text-shadow: 2px 2px 4px white; /* Margine albă pentru text */
         }
+
         button:hover {
-            background-color: orange; /* Culoare la hover */
+            background-color: rgba(255, 165, 0, 0.6); /* Schimbă culoarea de fundal la hover */
+            background-image: url('buton_imagine_hover.jpg'); /* Dacă vrei o altă imagine la hover */
         }
+
     </style>
+    <script>
+        function schimbaPagina(pagina) {
+            parent.frames["continut"].location.href = pagina;
+        }
+    </script>
 </head>
 <body>
-    <button onclick="schimbaPagina('html/biografie.html')">Biografie</button>
-    <button onclick="schimbaPagina('html/pagina2.html')">Pagina 2</button>
-    <button onclick="schimbaPagina('html/pagina3.html')">Pagina 3</button>
-    <b
+    <button onclick="schimbaPagina('biografie.html')">Biografie</button>
+    <button onclick="schimbaPagina('pagina2.html')">Pagina 2</button>
+    <button onclick="schimbaPagina('pagina3.html')">Pagina 3</button>
+</body>
+</html>
