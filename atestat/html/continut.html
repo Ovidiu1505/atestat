@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             height: 100vh; /* Întinde pagina pe toată înălțimea ferestrei */
-            background-image: url('../img/11.jpg'); /* Calea imaginii tale */
+            background-image: url('../img/12.png'); /* Calea imaginii tale */
             background-size: cover; /* Imaginea va acoperi întreaga fereastră */
             background-position: center; /* Centrează imaginea */
             display: flex;
@@ -32,8 +32,11 @@
         /* Stilizare text */
         h2 {
             font-size: 48px; /* Setează dimensiunea textului mare */
-            color: red; /* Culoare albă pentru text, pentru a fi vizibil pe fundal */
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adaugă o umbră pentru a face textul mai vizibil pe fundal */
+            color: white; /* Culoare albă pentru text */
+            text-shadow: 
+                2px 2px 4px black, /* Umbră subtire pentru contrast */
+                0 0 25px red, /* Lumină roșie în jurul textului */
+                0 0 5px darkred; /* Lumină mai intensă pentru margini */
             font-family: Arial, sans-serif;
             text-align: center;
             z-index: 1; /* Asigură că textul rămâne deasupra fundalului opac */
@@ -48,4 +51,3 @@
     <h2>CE DOREȘTI SĂ AFLII DESPRE REGELE CAROL I ?</h2>
 </body>
 </html>
-
