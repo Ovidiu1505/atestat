@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tineretea lui Carol I al României</title>
+    <style>
+        /* Fundal transparent */
+        #fundal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('../img/20.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Stilizare text */
+        #continut {
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+            color: white;
+            font-size: 22px;
+            font-family: "Times New Roman", serif;
+            text-shadow: 
+                1px 1px 2px black,
+                0 0 25px red,
+                0 0 5px darkred;
+            line-height: 1.3;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Stilizare imagini și video */
+        .image, iframe {
+            display: block;
+            margin: 20px auto; /* Centrează imaginea/video pe pagină */
+            width: 80%; /* Dimensiune medie */
+            max-width: 600px; /* Dimensiune maximă */
+            border-radius: 8px; /* Colțuri rotunjite */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px red; /* Border alb și lumină roșie */
+        }
+        
+        /* Stilizare buton fixat pe ecran */
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundal opac */
+            color: white;
+            border: 2px solid red; /* Margine roșie */
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred; /* Efect de text cu lumini roșii */
+            z-index: 2; /* Asigură-te că butonul rămâne deasupra altor elemente */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Tranziție pentru stil */
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Alb mai intens la hover */
+            transform: scale(1.1); /* Efect de mărire la hover */
+            box-shadow: 0 0 20px red, 0 0 30px darkred; /* Lumini roșii pe margine la hover */
+        }
+
+        /* Stilizare săgeată */
+        .back-button .arrow {
+            margin-right: 10px;
+            font-size: 32px;
+        }
+
+        background-color: transparent; /* Inițial, fundalul rămâne transparent pentru a permite poza de fundal să fie vizibilă */
+        transition: background-color 0.2s ease; /* Tranziție rapidă pentru schimbarea fundalului */
+
+        /* Stilizare video */
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Stilizare pentru secțiunea de contact */
+        #contact {
+            bottom: 0; /* Plasează textul la marginea de jos */
+            left: 0; /* Plasează textul la marginea stângă */
+            text-align: left; /* Aliniază textul la stânga */
+            color: white; /* Text alb */
+            font-style: italic; /* Text italic */
+            font-size: 14px; /* Dimensiune mică a textului */
+            text-shadow: 1px 1px 2px black, 0 0 5px red, 0 0 10px darkred; /* Lumini roșii pe margine */
+            padding: 10px; /* Adaugă puțin spațiu între text și margini */
+            z-index: 10; /* Asigură-te că textul rămâne vizibil, deasupra altor elemente */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fundal"></div> 
+    <div id="continut">
+        <h1>Tineretea lui Carol I al României</h1>
+        <h2>Originile și educația</h2>
+        
+        <p>Carol I s-a născut în Principatul Hohenzollern-Sigmaringen, la Sigmaringen, sub numele de Prinț Karl von Hohenzollern-Sigmaringen. Era al doilea fiu al prințului Karl Anton de Hohenzollern-Sigmaringen și al prințesei Josephine. Tatăl său, Karl Anton, a fost ministru-prezident al Prusiei între 1858 și 1862, iar Carol a crescut într-un mediu aristocratic, având parte de o educație militară riguroasă.</p>
+
+        <p>După terminarea studiilor elementare la Dresda, Carol s-a înscris la școala de cadeți din Münster, pe care a absolvit-o cu calificativul „bine”, devenind sublocotenent de dragoni. În 1857, a fost numit locotenent secund într-un regiment de artilerie și a finalizat cursurile Școlii de Artilerie și Geniu din Berlin.</p>
+
+        <br><br>
+        <!-- Prima imagine -->
+        <img src="../img/21.jpg" alt="Carol I în tinerețe" class="image">
+        <br><br>
+
+        <p>În 1864, Carol a participat ca voluntar în armata Prusiei în timpul celui de-al Doilea Război al Schleswigului, unde a fost implicat în asaltul citadelor Fredericia și Dybbøl. Aceste experiențe militare i-au fost de mare folos mai târziu, în timpul războiului ruso-turc.</p>
+
+        <p>Deși nu era înalt, Carol a fost descris ca un soldat exemplu: sănătos, disciplinat și cu o abilitate remarcabilă în politică, având vederi liberale. Cunoștea multe limbi europene și provenea dintr-o familie înrudită cu Napoleon al III-lea, ceea ce l-a ajutat în relațiile diplomatice, în special cu Franța.</p>
+
+        <br><br>
+        <!-- A doua imagine -->
+        <img src="../img/22.jpg" alt="Carol I în tinerețe" class="image">
+        <br><br>
+
+        <h2>Drumul spre tronul României</h2>
+        <p>În 1866, la solicitarea liderilor politici români și cu sprijinul Franței, Carol a fost ales să devină domnitorul României, într-o perioadă de instabilitate politică. La 10 aprilie 1866, guvernul provizoriu al României a proclamat organizarea unui plebiscit pentru a decide acceptarea sa ca principe. Plebiscitul a avut loc pe 15 aprilie 1866, iar 99,9% dintre alegători au susținut alegerea sa.</p>
+
+        <p>În ciuda opoziției din partea Imperiului Otoman și a altor puteri, Carol I a fost ales domn al Principatelor Unite pe 22 mai 1866. A depus jurământul în fața Camerei Deputaților și a început să implementeze reforme importante, stabilind bazele unui stat modern și consolidând autoritatea sa.</p>
+
+        <br><br>
+        <!-- A treia imagine -->
+        <img src="../img/23.jpg" alt="Carol I la începutul domniei" class="image">
+        <br><br>
+
+        <h2>Impactul și moștenirea timpurie</h2>
+        <p>Carol a fost un lider ferm, iar influența sa asupra României a fost profundă, fiind apreciat atât pentru abilitatea sa militară, cât și pentru viziunea sa politică. Reformele și strategiile sale au ajutat la modernizarea țării și la consolidarea poziției sale pe plan internațional.</p>
+
+        <p>Împreună cu familia sa, Carol I a jucat un rol crucial în schimbarea destinului României, iar contribuțiile sale vor fi recunoscute pe termen lung, lăsând o moștenire care va influența profund istoria țării.</p>
+
+        <br><br><br>
+
+    </div>
+
+    <!-- Buton Meniu -->
+    <button class="back-button" onclick="window.location.href='continut.html'">
+        <span class="arrow">&#8592;</span> Meniu
+    </button>
+    
+    <!-- Secțiune de contact -->
+    <div id="contact">
+        <p>Centru de Informare</p>
+        <p>Contact: Colegiul Național Mihai Viteazul Slobozia</p>
+        <p>Telefon: 0788455534</p>
+        <p>E-mail: cnmv.slob@cnmvslobozia.ro</p>
+    </div>
+</body>
+</html>

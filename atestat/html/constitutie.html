@@ -1,0 +1,172 @@
+s<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noua Constituție a României din 1866</title>
+    <style>
+        /* Fundal transparent */
+        #fundal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('../img/36.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Stilizare text */
+        #continut {
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+            color: white;
+            font-size: 22px;
+            font-family: "Times New Roman", serif;
+            text-shadow: 
+                1px 1px 2px black,
+                0 0 25px red,
+                0 0 5px darkred;
+            line-height: 1.3;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Stilizare imagini și video */
+        .image, iframe {
+            display: block;
+            margin: 20px auto; /* Centrează imaginea/video pe pagină */
+            width: 80%; /* Dimensiune medie */
+            max-width: 600px; /* Dimensiune maximă */
+            border-radius: 8px; /* Colțuri rotunjite */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px red; /* Border alb și lumină roșie */
+        }
+
+       /* Stilizare buton fixat pe ecran */
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundal opac */
+            color: white;
+            border: 2px solid red; /* Margine roșie */
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred; /* Efect de text cu lumini roșii */
+            z-index: 2; /* Asigură-te că butonul rămâne deasupra altor elemente */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Tranziție pentru stil */
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Alb mai intens la hover */
+            transform: scale(1.1); /* Efect de mărire la hover */
+            box-shadow: 0 0 20px red, 0 0 30px darkred; /* Lumini roșii pe margine la hover */
+        }
+
+        /* Stilizare săgeată */
+        .back-button .arrow {
+            margin-right: 10px;
+            font-size: 32px;
+        }
+        
+        background-color: transparent; /* Inițial, fundalul rămâne transparent pentru a permite poza de fundal să fie vizibilă */
+        transition: background-color 0.2s ease; /* Tranziție rapidă pentru schimbarea fundalului */
+
+        /* Stilizare video */
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        /* Stilizare pentru secțiunea de contact */
+        #contact {
+            bottom: 0; /* Plasează textul la marginea de jos */
+            left: 0; /* Plasează textul la marginea stângă */
+            text-align: left; /* Aliniază textul la stânga */
+            color: white; /* Text alb */
+            font-style: italic; /* Text italic */
+            font-size: 14px; /* Dimensiune mică a textului */
+            text-shadow: 1px 1px 2px black, 0 0 5px red, 0 0 10px darkred; /* Lumini roșii pe margine */
+            padding: 10px; /* Adaugă puțin spațiu între text și margini */
+            z-index: 10; /* Asigură-te că textul rămâne vizibil, deasupra altor elemente */
+        }
+    </style>
+</head>
+<body>
+    <div id="fundal"></div> 
+    <div id="continut">
+        <h1>Noua Constituție a României din 1866</h1>
+        <h2>Un pas către modernizarea statului român</h2>
+        
+        <p>În aprilie 1866, au avut loc alegeri pentru o nouă Cameră a Deputaților care a devenit și Adunare Constituantă. Această adunare și-a început lucrările pe 10 mai 1866, iar între 14 și 20 aprilie 1866, s-a organizat un plebiscit care a aprobat alegerea lui Carol I ca domnitor al României. Imediat după sosirea acestuia în țară, parlamentul a adoptat la 29 iunie 1866 noua constituție a României, cu votul unanim al celor 91 de deputați.</p>
+        <br><br>
+        <p>Constituția adoptată a fost una dintre cele mai avansate ale timpului, inspirată din cea a Belgiei, care a obținut independența în 1831. Prin această constituție, domnul Carol I a dobândit puteri semnificative, inclusiv dreptul de a numi titularii funcțiilor publice, de a comanda armata și de a acorda grațieri sau amnistii.</p>
+        <br><br>
+        <!-- Prima imagine -->
+        <img src="../img/37.png" alt="Constituția din 1866" class="image">
+        <br><br>
+        <p>Deși constituția era liberală, aceasta nu era democratică, iar în practică a permis o putere centralizată în mâinile domnitorului. De asemenea, constituția a omis orice referire la obligațiile față de Imperiul Otoman, constituind astfel un pas important către independența României.</p>
+        <br><br>
+        <p>Articolul 82 specifica faptul că puterea monarhului era ereditara, începând cu Carol I și continuând pe linie masculină prin dreptul de primogenitură. Totodată, în cadrul constituției a fost oficializată schimbarea denumirii „Principatele Unite” în „România”.</p>
+        <br><br>
+        <p>Pe 9 septembrie 1878, Carol I a primit titlul de „Alteță regală”, iar pe 15 martie 1881, constituția a fost modificată pentru a face din domnitorul României un rege. Ceremonia de încoronare a avut loc pe 10 mai 1881.</p>
+        <br><br>
+        <!-- A doua imagine -->
+        <img src="../img/38.jpg" alt="Incoronarea lui Carol I" class="image">
+        <br><br>
+        <h2>Monarhia Constituțională</h2>
+        <p>Ideea de bază a constituției din 1866 și a celor ulterioare a fost că regele domnește fără a guverna. Deși nu se implica direct în guvernare, regele avea o influență semnificativă asupra deciziilor politice. Sub domnia lui Carol I, dar și a urmașilor săi, România a evoluat semnificativ, consolidându-și statutul pe plan internațional.</p>
+        <br><br>
+        <!-- A treia imagine -->
+        <img src="../img/39.jpg" alt="Carol I și Constituția" class="image">
+        <br><br>
+        <h2>Moștenirea Constituției din 1866</h2>
+        <p>Constituția din 1866 a rămas un document fundamental pentru România până la începutul secolului XX, când au avut loc noi modificări. Aceasta a reprezentat un pas important în procesul de modernizare a statului român și în consolidarea autorității monarhului.</p>
+        <br><br><br>
+        
+        <br><br><br><br><br>
+        
+        <!-- Secțiune de contact -->
+        <div id="contact">
+            <p>Centru de Informare</p>
+            <p>Contact: Colegiul Național Mihai Viteazul Slobozia</p>
+            <p>Telefon: 0788455534</p>
+            <p>E-mail: cnmv.slob@cnmvslobozia.ro</p>
+        </div>
+
+        <!-- Butonul de Meniu -->
+        <button class="back-button" onclick="smoothTransition()">
+            <span class="arrow">←</span> Meniu
+        </button>
+    </div>
+
+    <script>
+        function smoothTransition() {
+            // Adaugă clasa care va aplica tranziția de fundal negru
+            document.body.classList.add('blackout');
+
+            // După 0.2 secunde (timpul tranziției), navighează către pagina dorită
+            setTimeout(function() {
+                window.location.href = "continut.html";  // Schimbă către pagina continut.html
+            }, 200); // Așteaptă 0.2 secunde pentru tranziția rapidă
+        }
+    </script>
+</body>
+</html>
