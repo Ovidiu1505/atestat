@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carol I al României</title>
+    <style>
+        #fundal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('../img/41.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #continut {
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+            color: lime;
+            font-size: 22px;
+            font-family: "Times New Roman", serif;
+            text-shadow: 1px 1px 2px black, 0 0 25px lime, 0 0 5px darkred;
+            line-height: 1.3;
+            border-radius: 10px;
+        }
+
+        .image, iframe {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px lime;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 2px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+            z-index: 2;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px red, 0 0 30px darkred;
+        }
+
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #contact {
+            bottom: 0;
+            left: 0;
+            text-align: left;
+            color: white;
+            font-style: italic;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px black, 0 0 5px red, 0 0 10px darkred;
+            padding: 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="fundal"></div>
+    <div id="continut">
+        <h1>Carol I al României</h1>
+        <h2>Un Rege Devotat României</h2>
+        
+        <p>Carol I a fost un monarh riguros, meticulos și dedicat, preocupat constant de prestigiul dinastiei pe care o fondase. Soția sa, regina Elisabeta, îl descria drept un om care „își poartă coroana și în somn”. Cu toate că a fost devotat țării sale adoptive, nu și-a uitat niciodată rădăcinile germane.</p>
+        <br><br>
+        <img src="../img/42.jpg" alt="Carol I" class="image">
+        <br><br>
+        <h2>Independența României</h2>
+        <p>Sub domnia sa, România și-a câștigat independența față de Imperiul Otoman după Războiul de Independență din 1877-1878. Carol I a condus personal trupele române pe câmpul de luptă, iar victoria a consolidat poziția internațională a țării.</p>
+        <br><br>
+        <img src="../img/43.jpg" alt="Carol I" class="image">
+        <br><br>
+        <h2>Transformarea României într-un Regat</h2>
+        <p>În 1881, Carol I a devenit primul rege al României. Proclamarea regatului a marcat o nouă etapă în dezvoltarea națiunii, stabilind România ca un stat modern și respectat în Europa.</p>
+        
+        <h2>Reforme și Modernizare</h2>
+        <p>Domnia sa a fost marcată de investiții în infrastructură, dezvoltarea armatei și organizarea eficientă a administrației. Carol I a pus bazele unei Românii moderne, iar prestigiul său a crescut atât pe plan intern, cât și internațional.</p>
+        <br><br>
+        <img src="../img/44.jpg" alt="Carol I" class="image">
+        <br><br>
+        <h2>Moștenirea lui Carol I</h2>
+        <p>Carol I rămâne în istorie ca un rege devotat, disciplinat și vizionar, care a consolidat independența și a transformat România într-un stat modern. Deciziile sale strategice au influențat viitorul națiunii, iar moștenirea sa este vizibilă și astăzi.</p>
+        <br><br>
+        
+        <br><br>
+        <div id="contact">
+            <p>Centru de Informare</p>
+            <p>Contact: Colegiul Național Mihai Viteazul Slobozia</p>
+            <p>Telefon: 0788455534</p>
+            <p>E-mail: cnmv.slob@cnmvslobozia.ro</p>
+        </div>
+        <button class="back-button" onclick="smoothTransition()">
+            <span class="arrow">←</span> Meniu
+        </button>
+    </div>
+    <script>
+        function smoothTransition() {
+            document.body.classList.add('blackout');
+            setTimeout(function() {
+                window.location.href = "continut.html";
+            }, 200);
+        }
+    </script>
+</body>
+</html>
