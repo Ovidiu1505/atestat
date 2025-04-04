@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viața Politică a lui Carol I</title>
+    <style>
+        #fundal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('../img/54.png'), black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1; /* Fundalul are z-index 1 */
+        }
+
+        /* Stilizare text */
+        #continut {
+            position: relative;
+            z-index: 2; /* Textul va fi peste fundal */
+            padding: 50px;
+            color: red;
+            font-size: 22px;
+            font-family: "Times New Roman", serif;
+            text-shadow: 
+                1px 1px 2px black,
+                0 0 25px red,
+                0 0 5px darkred;
+            line-height: 1.3;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent pentru text */
+        }
+
+        /* Stilizare imagini și video */
+        .image, iframe {
+            display: block;
+            margin: 20px auto; /* Centrează imaginea/video pe pagină */
+            width: 80%; /* Dimensiune medie */
+            max-width: 600px; /* Dimensiune maximă */
+            border-radius: 8px; /* Colțuri rotunjite */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px red; /* Border alb și lumină roșie */
+        }
+
+        /* Stilizare buton fixat pe ecran */
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundal opac */
+            color: white;
+            border: 2px solid red; /* Margine roșie */
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred; /* Efect de text cu lumini roșii */
+            z-index: 2; /* Asigură-te că butonul rămâne deasupra altor elemente */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Tranziție pentru stil */
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Alb mai intens la hover */
+            transform: scale(1.1); /* Efect de mărire la hover */
+            box-shadow: 0 0 20px red, 0 0 30px darkred; /* Lumini roșii pe margine la hover */
+        }
+
+        /* Stilizare video */
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Stilizare pentru secțiunea de contact */
+        #contact {
+            bottom: 0; /* Plasează textul la marginea de jos */
+            left: 0; /* Plasează textul la marginea stângă */
+            text-align: left; /* Aliniază textul la stânga */
+            color: white; /* Text alb */
+            font-style: italic; /* Text italic */
+            font-size: 14px; /* Dimensiune mică a textului */
+            text-shadow: 1px 1px 2px black, 0 0 5px red, 0 0 10px darkred; /* Lumini roșii pe margine */
+            padding: 10px; /* Adaugă puțin spațiu între text și margini */
+            z-index: 10; /* Asigură-te că textul rămâne vizibil, deasupra altor elemente */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fundal"></div>
+    <div id="continut">
+        <h1>Viața Politică a lui Carol I</h1>
+        <p>În 1868, tensiunile dintre Carol I și guvernul liberal radical au dus la retragerea acestuia din urmă de la putere. Divergențele principale au fost legate de reorganizarea armatei și dezvoltarea infrastructurii feroviare, pe care radicalii le considerau amenințări la adresa influenței lor politice.</p>
+
+        <img src="../img/47.jpg" alt="Carol I" class="image">
+
+        <p>Relația lui Carol I cu liberalii și conservatorii a fost marcată de conflicte. În 1870, confruntat cu o opoziție puternică, domnitorul a luat în considerare abdicarea. Într-o scrisoare anonimă publicată în ianuarie 1871, el critica tendința liberalilor de a aplica fără discernământ idei politice occidentale în România.</p>
+
+        <p>În 22 martie 1871, Carol a înlocuit guvernul liberal cu unul conservator, condus de Lascăr Catargiu. Această schimbare a adus stabilitate politică și i-a întărit încrederea în domnia sa.</p>
+
+        <h2>Răscoalele Țărănești</h2>
+        <p>În 1888 și 1907, țăranii români s-au revoltat împotriva condițiilor grele de muncă și a lipsei de pământ. Răscoala din 1907, pornită în nordul Moldovei, s-a răspândit rapid și a fost reprimată violent de armată, cu mii de victime.</p>
+
+        <img src="../img/48.jpg" alt="Răscoala 1907" class="image">
+
+        <p>Carol I a promis reforme agrare în timpul revoltelor, însă acestea nu au fost implementate imediat. Această situație a contribuit la creșterea sentimentelor republicane în România.</p>
+
+        <h2>Al Doilea Război Balcanic</h2>
+        <p>În 1913, România a participat la Al Doilea Război Balcanic, iar prin tratatul de pace de la București, Bulgaria a fost obligată să cedeze Dobrogea de Sud. Aceasta a fost una dintre cele mai mari realizări teritoriale ale domniei lui Carol I.</p>
+
+        <img src="../img/49.jpg" alt="Răscoala 1907" class="image">
+
+        <h2>Complotul de la Ploiești</h2>
+        <p>În 1870, Candiano Popescu a încercat să răstoarne domnia lui Carol I printr-o revoltă organizată în mai multe orașe. Așa-numita „Republică de la Ploiești” a fost rapid înăbușită, iar Popescu, deși inițial condamnat, a fost grațiat și ulterior a luptat pentru independența României.</p>
+
+        <h2>Universitatea Carol I</h2>
+        <p>Regele a jucat un rol activ în consolidarea și promovarea culturii și educației. A vizitat expoziții de artă în orașe occidentale precum Viena și München. Pe plan intern, a susținut financiar Fundația Universitară „Carol I”. De asemenea, împreună cu scriitoarea germană Mite Kremnitz, a redactat și publicat propriile memorii.</p>
+		<div id="contact">
+    <p>Centru de Informare</p>
+    <p>Contact: Colegiul Național Mihai Viteazul Slobozia</p>
+    <p>Telefon: 0788455534</p>
+    <p>E-mail: cnmv.slob@cnmvslobozia.ro</p>
+</div>
+        <button class="back-button" onclick="window.location.href='continut.html'">Înapoi la Meniu</button>
+    </div>
+</body>
+</html>
+

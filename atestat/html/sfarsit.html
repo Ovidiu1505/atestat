@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sfârșitul Domniei lui Carol I</title>
+    <style>
+        #fundal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('../img/56.png'), black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1; /* Fundalul are z-index 1 */
+        }
+
+        /* Stilizare text */
+        #continut {
+            position: relative;
+            z-index: 2; /* Textul va fi peste fundal */
+            padding: 50px;
+            color: red;
+            font-size: 22px;
+            font-family: "Times New Roman", serif;
+            text-shadow: 
+                1px 1px 2px black,
+                0 0 25px red,
+                0 0 5px darkred;
+            line-height: 1.3;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent pentru text */
+        }
+
+        /* Stilizare imagini și video */
+        .image, iframe {
+            display: block;
+            margin: 20px auto; /* Centrează imaginea/video pe pagină */
+            width: 80%; /* Dimensiune medie */
+            max-width: 600px; /* Dimensiune maximă */
+            border-radius: 8px; /* Colțuri rotunjite */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px red; /* Border alb și lumină roșie */
+        }
+
+        /* Stilizare buton fixat pe ecran */
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px 40px;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundal opac */
+            color: white;
+            border: 2px solid red; /* Margine roșie */
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred; /* Efect de text cu lumini roșii */
+            z-index: 2; /* Asigură-te că butonul rămâne deasupra altor elemente */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Tranziție pentru stil */
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Alb mai intens la hover */
+            transform: scale(1.1); /* Efect de mărire la hover */
+            box-shadow: 0 0 20px red, 0 0 30px darkred; /* Lumini roșii pe margine la hover */
+        }
+
+        /* Stilizare video */
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Stilizare pentru secțiunea de contact */
+        #contact {
+            bottom: 0; /* Plasează textul la marginea de jos */
+            left: 0; /* Plasează textul la marginea stângă */
+            text-align: left; /* Aliniază textul la stânga */
+            color: white; /* Text alb */
+            font-style: italic; /* Text italic */
+            font-size: 14px; /* Dimensiune mică a textului */
+            text-shadow: 1px 1px 2px black, 0 0 5px red, 0 0 10px darkred; /* Lumini roșii pe margine */
+            padding: 10px; /* Adaugă puțin spațiu între text și margini */
+            z-index: 10; /* Asigură-te că textul rămâne vizibil, deasupra altor elemente */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fundal"></div>
+    <div id="continut">
+        <h1>Sfârșitul Domniei lui Carol I</h1>
+        <p>Domnia îndelungată a lui Carol a ajutat dezvoltarea rapidă a statului român. Statul însuși însă – sub domnia lui Carol s-a dezvoltat într-un mod în care administrația era una coruptă și ineficientă, iar puterea marilor proprietari de pământ – care-l siliseră să abdice pe Alexandru Ioan Cuza rămăsese intactă.</p>
+
+        <p>Spre sfârșitul domniei sale și începutul Primului Război Mondial, Regele dorea să intre în război de partea Puterilor Centrale, în timp ce opinia publică era de partea Antantei. Carol a semnat un tratat secret în 1883, care lega România de Tripla Alianță și, deși tratatul trebuia activat doar în cazul în care Rusia imperialistă ar fi atacat unul dintre membrii tratatului, Carol era convins că cel mai onorabil ar fi fost intrarea în război de partea Imperiului German. În 21 iulie / 3 august 1914 a fost convocată o întrunire de urgență a Consiliului de Coroană unde Carol le-a comunicat acestora existența tratatului și și-a exprimat dorința sa. A întâmpinat o opoziție fermă din partea majorității membrilor Consiliului de Coroană.</p>
+
+        <p>Carol I moare pe 27 septembrie/10 octombrie 1914. Viitorul rege Ferdinand, sub influența soției sale, regina Maria, a fost mai dispus să asculte opinia publică.</p>
+
+        <img src="../img/57.jpg" alt="Carol I" class="image">
+
+
+<div id="contact">
+    <p>Centru de Informare</p>
+    <p>Contact: Colegiul Național Mihai Viteazul Slobozia</p>
+    <p>Telefon: 0788455534</p>
+    <p>E-mail: cnmv.slob@cnmvslobozia.ro</p>
+</div>
+        <button class="back-button" onclick="window.location.href='continut.html'">Înapoi la Meniu</button>
+    </div>
+</body>
+</html>
